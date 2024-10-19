@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+
+import KeyBoard from './src/component/keyBoard';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <KeyBoard />
+   
     </View>
   );
 }
@@ -17,4 +19,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  buttonNumerico: {
+
+    backgroundColor: 'blue',
+    padding: 10,
+    width: 90,
+    height: 40,
+    textAlign: 'center'
+  },
+  numero: {
+    color: "red",
+    flex: 1,
+    textAlign: 'center'
+  }
 });
